@@ -1,14 +1,16 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import {RouterModule, RouterOutlet} from '@angular/router';
 import {CardModule} from "primeng/card";
 import {Button} from "primeng/button";
 import {TopbarComponent} from "./topbar/topbar.component";
+import {FeedComponent} from "./feed/feed.component";
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, CardModule, Button, TopbarComponent],
+  imports: [CommonModule, RouterOutlet, CardModule, Button, TopbarComponent, RouterModule, FeedComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })

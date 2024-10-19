@@ -34,11 +34,13 @@ export class TopbarComponent implements OnInit{
     this.items = [
       {
         label: 'Home',
-        icon: 'pi pi-home'
+        icon: 'pi pi-home',
+        routerLink: '/' // Add router link for Home
       },
       {
         label: 'Features',
-        icon: 'pi pi-star'
+        icon: 'pi pi-star',
+        routerLink: '/features' // Add router link for Features
       },
       {
         label: 'Projects',
@@ -46,15 +48,18 @@ export class TopbarComponent implements OnInit{
         items: [
           {
             label: 'Components',
-            icon: 'pi pi-bolt'
+            icon: 'pi pi-bolt',
+            routerLink: '/projects/components' // Add router link for Components
           },
           {
             label: 'Blocks',
-            icon: 'pi pi-server'
+            icon: 'pi pi-server',
+            routerLink: '/projects/blocks' // Add router link for Blocks
           },
           {
             label: 'UI Kit',
-            icon: 'pi pi-pencil'
+            icon: 'pi pi-pencil',
+            routerLink: '/projects/ui-kit' // Add router link for UI Kit
           },
           {
             label: 'Templates',
@@ -62,11 +67,13 @@ export class TopbarComponent implements OnInit{
             items: [
               {
                 label: 'Apollo',
-                icon: 'pi pi-palette'
+                icon: 'pi pi-palette',
+                routerLink: '/projects/templates/apollo' // Add router link for Apollo
               },
               {
                 label: 'Ultima',
-                icon: 'pi pi-palette'
+                icon: 'pi pi-palette',
+                routerLink: '/projects/templates/ultima' // Add router link for Ultima
               }
             ]
           }
@@ -74,9 +81,11 @@ export class TopbarComponent implements OnInit{
       },
       {
         label: 'Contact',
-        icon: 'pi pi-envelope'
+        icon: 'pi pi-envelope',
+        routerLink: '/contact' // Add router link for Contact
       }
-    ]
+    ];
   }
+
 
 }
